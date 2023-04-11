@@ -1,0 +1,13 @@
+.container-fluid{
+    background-color: cornflowerblue;
+    overflow: hidden;
+}
+.container{
+    background-color: white;
+    overflow: hidden;
+}
+.row{
+    overflow: hidden;
+    margin-left: -30px;
+    margin-right: -30px;
+}

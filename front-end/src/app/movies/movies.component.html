@@ -1,0 +1,14 @@
+
+    <div class="row space">
+        <div class="col-md-6 text-center">
+            <mm-pagination [totalItems]="numOfMovies" [activePage]="params.page" (onPageChange)="updateMovies($event)"></mm-pagination>
+        </div>
+        <div class="col-md-6 text-center">
+            <mm-sort-form (onSortChange)="updateMovies($event)"></mm-sort-form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 margin" *ngFor="let movie of movies">
+            <mm-movie-item [movie]="movie"></mm-movie-item>
+        </div>
+    </div>
